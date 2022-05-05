@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day4 DOM</title>
+</head>
+
+<body>
+    <form id="search">
+        <label>
+            <input type="text" name="search" required>
+            <input type="submit" value="S E A R CH">
+        </label>
+    </form>
+    <form name="search-age">Search the visitors:
+        <table id="age">
+            <tr>
+                <td>Age::</td>
+                <td id="age-list">
+                    <label>
+                        <input type="radio" name="age" value="balogat">less than 18
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="balogatdan yuqori">18-50
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="grand dad or grandmom">more than 50
+                    </label>
+                </td>
+
+            </tr>
+            <tr>
+                <td id="new-td">Additionaly</td>
+                <td id="info-list">
+                    <label>
+                        <input type="text" name="info">
+                        <input type="text" name="info2">
+                        <input type="text" name="info3">
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <label>
+
+            <input type="submit" name="submit" value="Search site by your age">
+        </label>
+
+
+    </form>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
