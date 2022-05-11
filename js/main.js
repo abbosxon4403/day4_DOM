@@ -1,19 +1,30 @@
-let age = document.getElementById("age");
-let search = document.getElementById("search");
-let td = document.querySelector("td");
-let age_list = document.getElementById('age-list');
-let info = document.getElementById('info-list')
-let Additionaly = document.getElementById("new-td")
-let submit = document.getElementById("submit");
-console.log(search);
-console.log(age);
-console.log(td);
-console.log(age_list);
-console.log(Additionaly);
-console.log(info);
-console.log(submit);
+var addTodo = document.querySelector('.add-todo');
+let makeTodo = document.querySelector('todo-maker')
 
+addTodo.addEventListener('click', () => {
+    makeTodo.value = ''
+        // 
+    let text = document.createElement('div')
+    text.className = ('w-75 text')
+    text.textContent = makeTodo.value;
+    li.append(text);
+    // 
+    var li = document.createElement('li')
+    li.className = ('list-group-item d-flex align-items-center')
+        // 
+    let input = document.createElement('input')
+    input.type = ('checkbox');
+    // 
+    li.append(input);
 
-// 30 , 60 , 20 , 30 , 40
+    let edit = document.createElement('button')
+    edit.className = ('btn btn-success')
+    edit.value = ('edit')
+    let wrapper = document.createElement('div')
+    wrapper.append(edit)
+    let deleter = document.createElement('button')
+    deleter.className = ('btn btn-success')
+    wrapper.append(deleter)
 
-console.log(2 + 3 + 3 + 4 + 1 + 3 + 2);
+    li.append(wrapper)
+});
